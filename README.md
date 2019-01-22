@@ -1,9 +1,9 @@
 # s_archetypes
-Contains archetypes for spark and so on
+Contains archetypes for Apache Spark, Hadoop...
 
 ## sc
 
-This on contains archetype for generate spark + scala + maven project for running on cluster.
+This one contains archetype for generate spark + scala + maven project for running on cluster (+ local + tests).
 
 ### How to create project
 
@@ -72,13 +72,18 @@ export PATH=$HADOOP_COMMON_HOME/bin/:$SQOOP_HOME/bin/:$SPARK_HOME/bin/:$HIVE/bin
 ```
 
 Also (in HADOOP_CONF_DIR files from cluster):
+
+```
 core-site.xml
 hdfs-site.xml
 hive-site.xml
 mapred-site.xml
 ssl-client.xml
 yarn-site.xml
+```
 
 Run (from target of assembly).
 
+```
 run.sh
+```
